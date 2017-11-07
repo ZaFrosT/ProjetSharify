@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body{
+    background: black;
+    font-family: Roboto;
+}
+h6{
+    color: beige;
+}
+h3{
+    color: beige;
+}
+p{
+    color: beige;
+}
