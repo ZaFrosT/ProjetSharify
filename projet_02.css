@@ -94,25 +94,30 @@ nav div h1{
 /* Twitch */
 .boiteTwitch{
     padding: 5%;
+    display: flex;
+}
+
+#chat{
+display: inline-block;
+flex-grow: 1;
 }
 
 .chatTwitch{
-    height: 480px;
+    height: 75%;
 }
 
-.twitch-embed{
+#video{
     display: inline-block;
-    float: left;
     position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    flex-grow: 4;
 }
 
 .videoTwitch{
     position: absolute;
 	right: 5%;
-	width: 60%;
-	height: 100%;
+    width: 100%;
+    height: 75%;
 }
 
 p{
