@@ -18,3 +18,13 @@ window.onclick = function(event) {
     }
   }
 }
+
+document.onload(init)
+
+function init(){
+    new Twitch.Embed("twitch-embed", {
+        width: 75%,
+        height: 480,
+        channel: "SevLive"
+      });
+}
