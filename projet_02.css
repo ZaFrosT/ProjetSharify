@@ -92,36 +92,9 @@ nav div h1{
 }
 
 /* Twitch */
-.boiteTwitch{
-    padding: 5%;
-    display: flex;
-}
-
-#chat{
-display: inline-block;
-flex-grow: 1;
-}
-
-.chatTwitch{
-    height: 75%;
-}
-
-#video{
+.boite{
     display: inline-block;
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    flex-grow: 4;
-}
-
-.videoTwitch{
-    position: absolute;
-	right: 5%;
-    width: 100%;
-    height: 75%;
-}
-
-p{
-    color: red;
+    padding: 3% 0 3% 0;
 }
 
 
@@ -129,4 +102,12 @@ p{
 /* Footer */
 footer{
     border-top: 1px solid red;
+}
+
+footer div{
+    text-align: center;
+}
+
+footer div p{
+    color: red;
 }
