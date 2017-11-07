@@ -5,7 +5,17 @@ body {
     font-family: Roboto;
 }
 
-
+nav{
+    text-align: center;
+}
+nav div{
+    display: inline-block;
+}
+nav div .logo {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
 
 /* Dropdown Button */
 .drop-btn {
