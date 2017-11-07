@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+
+/* Body */
 body {
     background: black;
     font-family: Roboto;
 }
 
+/* Nav */
 nav{
     text-align: center;
+    border-bottom: 1px solid red;
 }
 nav div{
     display: inline-block;
@@ -17,26 +21,35 @@ nav div .logo {
     width: 50px;
 }
 
+/* Sev à gauche */
+nav .pseudogauche {
+    float: left;
+}
+
+nav div h1{
+    color: red;
+    margin: 10px 0 0 10px;
+}
+
+
 /* Dropdown Button */
 .drop-btn {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 0, 0);
     padding: 16px;
     font-size: 16px;
-    border: 2px solid rgb(185, 0, 0);
+    border: none;
     cursor: pointer;
-    border-radius: 0.25rem;
+    top: 0;
 }
 
 /* hover & focus */
 .drop-btn:hover{
-    background-color: #ff0000;
     color: rgb(255, 255, 255);
 }
 
 .drop-btn:focus {
-    background-color: #500000;
-    border-radius: 0;
+
 }
 
 /* The container <div> - needed to position the drop content */
@@ -51,7 +64,7 @@ nav div .logo {
     display: none;
     position: absolute;
     right: 0;
-    background-color: #000000;
+    background-color: #00000000;
     min-width: 160px;
     box-shadow: 0 0 16px 8px, rgb(114, 0, 0);
     z-index: 1;
@@ -69,11 +82,16 @@ nav div .logo {
 
 /* Change color of dropdown links on hover */
 .drop-content a:hover {
-    background-color: #7a0000;
+    background-color: #7a000000;
     color: rgb(255, 255, 255);
 }
 
 /* Show the dropdown menu (use JS to add this class to the .drop-content container when the user clicks on the dropdown button) */
 .show {
     display:block;
+}
+
+/* Footer */
+footer{
+    border-top: 1px solid red;
 }
