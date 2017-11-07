@@ -23,8 +23,8 @@ document.onload(init)
 
 function init(){
     new Twitch.Embed("twitch-embed", {
-        width: 75%,
-        height: 480,
+        width: 75%;
+        height: auto;
         channel: "SevLive"
       });
 }
