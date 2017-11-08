@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body{
+    background: url("imgs/redwpp.jpg");
+    font-family: Roboto;
+}
+/* NAV */
+nav{
+    text-align: center;
+    border-bottom: 1px solid red;
+    margin-bottom: 3%;
+}
+nav div{
+    display: inline-block;
+    padding: 1% 0 1% 0;
+}
+nav div .logo {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+/* Sev à gauche */
+nav .pseudogauche {
+    float: left;
+}
+
+nav div h1{
+    color: red;
+}
+
+
+/*FORMULAIRE*/
+form {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 60%;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 1em;
+    text-align: center;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 15%;
+    color: beige;
+}
+
+input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 40%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid rgb(255, 0, 0);
+    background-color: lightgray;
+}
+
+input:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
