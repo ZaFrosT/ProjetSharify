@@ -1,16 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 body{
+    background: url("imgs/redwpp.jpg");
     font-family: Roboto;
 }
+/* NAV */
+nav{
+    text-align: center;
+    border-bottom: 1px solid red;
+    margin-bottom: 3%;
+}
+nav div{
+    display: inline-block;
+    padding: 1% 0 1% 0;
+}
+nav div .logo {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
 
+/* Sev à gauche */
+nav .pseudogauche {
+    float: left;
+}
+
+nav div h1{
+    color: red;
+}
+
+
+/*FORMULAIRE*/
 form {
     /* Pour le centrer dans la page */
     margin: 0 auto;
     width: 60%;
     /* Pour voir les limites du formulaire */
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid rgb(255, 0, 0);
     border-radius: 1em;
     text-align: center;
 }
@@ -23,6 +50,7 @@ label {
     /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
     display: inline-block;
     width: 15%;
+    color: beige;
 }
 
 input, textarea {
@@ -36,7 +64,8 @@ input, textarea {
     box-sizing: border-box;
 
     /* Pour harmoniser l'apparence des bordures des champs textuels */
-    border: 1px solid #999;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: lightgray;
 }
 
 input:focus, textarea:focus {
