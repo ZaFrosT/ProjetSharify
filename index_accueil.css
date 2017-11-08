@@ -7,4 +7,10 @@ body {
     /*background-size: cover;*/
     font-family: Roboto;
 }
+body div{
+    position: absolute; /* or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 

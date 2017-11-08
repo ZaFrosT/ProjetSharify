@@ -20,6 +20,7 @@ nav div .logo {
     display: inline-block;
     height: 50px;
     width: 50px;
+    transform: translate(-50%,0%);
 }
 
 /* Sev à gauche */
