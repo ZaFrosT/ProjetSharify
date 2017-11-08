@@ -12,5 +12,55 @@ body div{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
 }
 
+button{
+    display: inline-block;
+    font-size: 48px;
+    color: red;
+    border: 1px solid red;
+}
+a:visited {
+    color: black;
+    background-color: rgb(109, 1, 1);
+}
+
+
+.pulse {
+    display: block;
+    border-radius: 4%;
+    background: #000000;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(122, 3, 3, 0.4);
+    animation: pulse 2s infinite;
+}
+.pulse:hover {
+    animation: none;
+}
+      
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 44, 44, 0.4);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 0 25px rgba(204, 44, 44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 44, 44, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 44, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 44, 44, 0.4);
+    }
+    50% {
+        -moz-box-shadow: 0 0 0 25px rgba(204, 44, 44, 0);
+        box-shadow: 0 0 0 25px rgba(204, 44, 44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 44, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 44, 44, 0);
+    }
+}
