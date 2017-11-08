@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+/* Body */
+body {
+    background: url("imgs/redwpp.jpg");
+    /*background-size: cover;*/
+    font-family: Roboto;
+}
+
