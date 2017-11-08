@@ -18,3 +18,7 @@ window.onclick = function(event) {
     }
   }
 }
+
+// Onglets:
+
+
