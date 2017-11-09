@@ -44,7 +44,7 @@ body div{
 }
 
 body div h1{
-    color: red;
+    color: beige;
 }
 /*FORMULAIRE*/
 form {
@@ -69,7 +69,7 @@ label {
     color: beige;
 }
 
-input, textarea {
+body form div input, textarea {
     /* Afin de s'assurer que tous les champs textuels utilisent la même police
        Par défaut, textarea utilise une police à espacement constant */
     font: 1em sans-serif;
@@ -84,7 +84,7 @@ input, textarea {
     background-color: lightgray;
 }
 
-input:focus, textarea:focus {
+#courriel:focus, #nom:focus, textarea:focus {
     /* Afin de rehausser les éléments actifs */
     border-color: #000;
 }
@@ -102,41 +102,85 @@ textarea {
 }
 
 /* Onglets */
-
-#onglets{
-    position : absolute;
-    border : 1px solid transparent;
-    padding : 0;
-    list-style-type : none;
-    left : 0;
-    margin-top : 0;
-    width : 100%;
+  
+h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
 }
-
-#onglets li{
-    float : left;
-    /*height : 21px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
-    background-color: rgba(244, 249, 253, 0);
-    margin : 2px 2px 0 2px;  /* Pour les navigateurs autre que IE */
-    /*margin : 1px 2px 0 2px;  /* Pour IE  */
-    border : 1px solid rgba(255, 0, 0, 0.349);
+  
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+  
+.main {
+    min-width: 320px;
+    padding: 50px;
+    margin: 0 auto;
+    background: transparent;
+}
+  
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid rgb(255, 0, 0);
+}
+  
+#tab1, #tab2, #tab3, #tab4 {
+    display: none;
+}
+  
+label {
+    display: inline-block;
+    width: 25%;
+    font-weight: 600;
+    text-align: center;
+    color: beige;
+    border: 1px solid transparent;
+}
+  
+label:before {
+    font-weight: normal;
+    margin-right: 10px;
+}
+  
+label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16b'; }
+label[for*='4']:before { content: '\f1a9'; }
+  
+label:hover {
+    color: rgba(255, 0, 0, 0.315);
     cursor: pointer;
 }
-#onglets li.active{
-    border-bottom: 1px solid #fff;
-    background-color: rgba(255, 0, 0, 0.226);
-    color: beige;
+  
+input:checked + label {
+    color: #555;
+    border: 1px solid rgb(255, 0, 0);
+    border-top: 2px solid rgb(255, 0, 0);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.308);
 }
-#onglets a{
-    display : block;
-    color : rgb(255, 0, 0);
-    text-decoration : none;
-    padding : 4px;
+  
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+    display: block;
 }
-#onglets a:hover{
-    background : rgb(119, 0, 0);
-    color: beige;
+  
+@media screen and (max-width: 650px) {
+    label {
+      font-size: 0;
+    }
+    label:before {
+      margin: 0;
+      font-size: 18px;
+    }
 }
-#menu{
-    padding-bottom : 30px;
+  
+@media screen and (max-width: 400px) {
+    label {
+      padding: 15px;
+    }
 }
