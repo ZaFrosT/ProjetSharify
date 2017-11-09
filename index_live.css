@@ -83,6 +83,7 @@ nav div h1{
 /* Twitch */
 .twitchWrapper {
     position: relative;
+    width: 85%;
 }
 
 .twitchStream {
