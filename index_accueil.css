@@ -5,6 +5,9 @@
 body {
     font-family: Roboto;
     background: url("imgs/redwpp.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .watermark{
