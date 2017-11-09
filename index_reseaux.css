@@ -1,13 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
 body{
+    font-family: Roboto;
     background: url("imgs/redwpp.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
 
+.forme{
+    left: 50%;
+    text-align: center;
+}
 
+.aPropos{
+    width: 80%;
+    display: block;
+    margin: 0;
+}
 
+.texte{
+    position: relative;
+    color: beige;
+    font-size: 18px;
+}
 
+b{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.twitter{
+    position: absolute;
+    left: 10%;
+}
+.facebook{
+    position: absolute;
+    right: 10%;
+}
+.youtube{
+    position: absolute;
+    bottom: 10%;
+   left: 10%;
+}
+.discord{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
 
 /* Onglets */
 
