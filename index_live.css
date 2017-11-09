@@ -1,84 +1,210 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
-
-/* Body */
-body {
+body{
     background: url("imgs/redwpp.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     font-family: Roboto;
 }
-
-/* Nav */
+/* NAV */
 nav{
     border-bottom: 1px solid red;
 }
 nav div{
     display: inline-block;
+    padding: 1% 0 1% 1%;
 }
-nav div .logo {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    left: 0;
-}
-
 /* Sev à gauche */
-nav .pseudogauche {
-    position: absolute;
-    transform: translate(-50%, 0%);
+nav div div .logo {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    padding-right: 1%;
+    float: both;
+}
+/*Titre */
+body nav div div titrePage{
+    display: inline-block;
+    top: 5%;
     left: 50%;
+    transform: translate(-50%, 0);
 }
 
-nav div h1{
+nav div div h1{
     color: red;
 }
 
 
-/* Onglets */
-
-#onglets{
-    position : absolute;
-    border : 1px solid transparent;
-    padding : 0;
-    list-style-type : none;
-    left : 0;
-    margin-top : 0;
-    width : 100%;
+body div{
+    top: 0;
+    text-align: center;
+    padding-bottom: 1%;
 }
 
-#onglets li{
-    float : left;
-    /*height : 21px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
-    background-color: rgba(244, 249, 253, 0);
-    margin : 2px 2px 0 2px;  /* Pour les navigateurs autre que IE */
-    /*margin : 1px 2px 0 2px;  /* Pour IE  */
-    border : 1px solid rgba(255, 0, 0, 0.349);
+body div h1{
+    color: beige;
+}
+/*FORMULAIRE*/
+form {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 60%;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 1em;
+    text-align: center;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 15%;
+    color: beige;
+}
+
+body form div input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 40%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid rgb(255, 0, 0);
+    background-color: lightgray;
+}
+
+#courriel:focus, #nom:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
+/* Onglets */
+  
+h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
+}
+  
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+  
+.main {
+    min-width: 320px;
+    padding: 50px;
+    margin: 0 auto;
+    background: transparent;
+}
+  
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid rgb(255, 0, 0);
+}
+  
+#tab1, #tab2, #tab3, #tab4{
+    display: none;
+}
+  
+label {
+    display: inline-block;
+    width: 15%;
+    font-weight: 600;
+    text-align: center;
+    color: beige;
+    border: 1px solid transparent;
+    margin-bottom: 0;
+}
+  
+label:before {
+    font-weight: normal;
+}
+  
+label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16b'; }
+label[for*='4']:before { content: '\f1a9'; }
+  
+label:hover {
+    color: rgba(255, 0, 0, 0.315);
     cursor: pointer;
 }
-#onglets li.active{
-    border-bottom: 1px solid #fff;
-    background-color: rgba(255, 0, 0, 0.226);
+  
+input:checked + label {
     color: beige;
+    border: 1px solid rgb(255, 0, 0);
+    border-top: 2px solid rgb(255, 0, 0);
+    border-bottom: 1px solid transparent;
+    background-color: rgba(255, 0, 0, 0.1);
 }
-#onglets a{
-    display : block;
-    color : rgb(255, 0, 0);
-    text-decoration : none;
-    padding : 4px;
-}
-#onglets a:hover{
-    background : rgb(119, 0, 0);
-    color: beige;
-}
-#menu{
-    padding-bottom : 30px;
+  
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4, 
+#tab5:checked ~ #content5{
+    display: block;
 }
 
+@media screen and (max-width: 1028px) {
+    label {
+        font-size: 15px;
+      }
+      label:before {
+        margin: 0;
+        font-size: 15px;
+      }
+}
 
+@media screen and (max-width: 965px) {
+    label {
+        font-size: 12px;
+      }
+      label:before {
+        margin: 0;
+        font-size: 12px;
+      }
+}
 
-
+@media screen and (max-width: 795px) {
+    label {
+      font-size: 0;
+    }
+    label:before {
+      margin: 0;
+      font-size: 18px;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    label {
+      padding: 15px;
+    }
+}
 
 /* Twitch */
 .twitchWrapper {
@@ -121,6 +247,53 @@ nav div h1{
         display:none;
     }
 }
+
+/*RESEAUX*/
+.forme{
+    left: 50%;
+    text-align: center;
+}
+
+.aPropos{
+    width: 80%;
+    display: block;
+    margin: 0;
+}
+
+.texte{
+    position: relative;
+    color: beige;
+    font-size: 18px;
+}
+
+b{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.twitter{
+    position: absolute;
+    left: 10%;
+}
+.facebook{
+    position: absolute;
+    right: 10%;
+}
+.youtube{
+    position: absolute;
+    bottom: 10%;
+   left: 10%;
+}
+.discord{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+
+
+
+
 
 /* Footer */
 footer{

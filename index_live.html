@@ -4,56 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="index_live.css">
-    <title>Sev | Live</title>
+    <title>Sev | Contact</title>
 </head>
 <body>
     <nav>
-        <div><!--Logo en coin fixe-->
-            <a href="" target="_blank">
-                <img class="logo" src="imgs\1LeliaSev.png" alt="Lelia">
-            </a>
-        </div>
-        <div class="pseudogauche"><!--Nom à gauche-->
-            <h1>Sev</h1>
-        </div>
-    </nav>
-    <div class="boite">
-        <div id="menu"><!--Onglets de navigation-->
-            <ul id="onglets">
-                <li><a href="index_live.html"> Accueil </a></li>
-                <li><a href="index_programmation.html"> Programmation </a></li>
-                <li><a href="index_reseaux.html"> Réseaux Sociaux </a></li>
-                <li><a href="index_contact.html"> Contact </a></li>
-            </ul>
-        </div>
-        <div class='twitchWrapper'>  
-            <div class='twitchChat'>
-                <iframe frameborder="0" scrolling="no" src="https://www.twitch.tv/7xSev/chat?darkpopout"></iframe>
-            </div>
-            <div class='twitchStream'>
-                <iframe src="https://player.twitch.tv/?channel=7xSev" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
         <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <div class="coin"><!--Logo en coin fixe-->
+                <a href="" target="_blank">
+                    <img class="logo" src="imgs\1LeliaSev.png" alt="Lelia">
+                </a>
+            </div>
         </div>
-    </div>
-    <footer>
-        <div><!--Informations Footer-->
-            <p>
-                Pour toute information <br>
-                Contactez Sev via l'onglet <br>
-                "Contact"
+    </nav> 
+    <div class="main">
+            
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Live</label>
+              
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Programmation</label>
+              
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Contact</label>
+              
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Supportez Sev</label>
+              
+            <section id="content1">
+                <div class='twitchWrapper'>  
+                    <div class='twitchChat'>
+                        <iframe frameborder="0" scrolling="no" src="https://www.twitch.tv/7xSev/chat?darkpopout"></iframe>
+                    </div>
+                    <div class='twitchStream'>
+                        <iframe src="https://player.twitch.tv/?channel=7xSev" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </section>
+              
+            <section id="content2">
+              <p>
+                exemple 2
             </p>
+            
+            </section>
+              
+            <section id="content3">
+                <div class="titreForm">
+                    <h1>Remplissez le formulaire:</h1>
+                </div> 
+                <form action="/ma-page-de-traitement" method="post">
+                    <div>
+                        <label for="nom">Identifiant :</label>
+                        <input type="text" id="nom" />
+                    </div>
+                    <div>
+                        <label for="courriel">Email :</label>
+                        <input type="email" id="courriel"/>
+                    </div>
+                    <div>
+                        <label for="message">Message :</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </section>
+              
+            <section id="content4">
+                    
+            </section>
         </div>
-
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script src="projet_02.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
