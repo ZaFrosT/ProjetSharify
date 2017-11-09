@@ -54,18 +54,18 @@
                 <div class="titreForm">
                     <h1>Remplissez le formulaire:</h1>
                 </div> 
-                <form action="/ma-page-de-traitement" method="post">
+                <form action="mailto:sevtv.contact@gmail.com" method="post">
                     <div>
                         <label for="nom">Identifiant :</label>
-                        <input type="text" id="nom" />
+                        <input required type="text" id="nom" />
                     </div>
                     <div>
                         <label for="courriel">Email :</label>
-                        <input type="email" id="courriel"/>
+                        <input required type="email" id="courriel"/>
                     </div>
                     <div>
                         <label for="message">Message :</label>
-                        <textarea id="message"></textarea>
+                        <textarea required id="message"></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">Envoyer</button>
