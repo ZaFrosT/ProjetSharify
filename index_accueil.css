@@ -7,6 +7,16 @@ body {
     background: url("imgs/redwpp.jpg");
 }
 
+.watermark{
+    float: right;
+    top: 0;
+}
+
+p{
+    color: rgba(255, 0, 0, 0.3);
+    font-size: 8px;
+}
+
 #logo{
     position: absolute;
     top: 50%;
