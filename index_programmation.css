@@ -8,27 +8,36 @@ body{
 
 table {
     text-align: center;
-    background-color: white;
-    border-radius: 5px;
-    margin: 0 auto;
-    border-spacing: 0;
-    padding: 5px;
-}
+    background-color: transparent;
+    color: beige;
+    width: 80%;
 
-tr:nth-child(even) {
-    color: black;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: rgb(91, 91, 91);
-    color: white;
+    transform: translate(12.5%, 17.5%);
 }
 
 tr {
-    font-family: Roboto;
     text-align: center;
 }
 
-th, td {
+th {
     padding: 20px;
+    border-right: 1px solid red;
 }
+
+td {
+    padding: 110px 10px;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    transform: scale(1.0001);
+}
+
+.tabHeures{
+    border-top: 1px solid red;
+}
+
+/*footer{
+    text-align: center;
+    border-top: 1px solid red;
+    color: beige;
+    
+}*/
