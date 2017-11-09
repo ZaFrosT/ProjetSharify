@@ -16,14 +16,8 @@
                     <img class="logo" src="imgs\1LeliaSev.png" alt="Lelia">
                 </a>
             </div>
-            <div class="titrePage">
-                <h1>Contact</h1>
-            </div>
         </div>
-    </nav>
-    <div class="titreForm">
-        <h1>Remplissez le formulaire:</h1>
-    </div>  
+    </nav> 
     <div class="main">
             
             <input id="tab1" type="radio" name="tabs" checked>
@@ -51,9 +45,14 @@
               <p>
                 exemple 2
             </p>
-              <p>
-                exemple 2
-            </p>
+            <div class='twitchWrapper'>  
+                <div class='twitchChat'>
+                    <iframe frameborder="0" scrolling="no" src="https://www.twitch.tv/7xSev/chat?darkpopout"></iframe>
+                </div>
+                <div class='twitchStream'>
+                    <iframe src="https://player.twitch.tv/?channel=7xSev" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
             </section>
               
             <section id="content3">
@@ -66,31 +65,28 @@
             </section>
               
             <section id="content4">
-              <p>
-                exemple 4
-              </p>
-              <p>
-                  exemple 4
-              </p>
+                <div class="titreForm">
+                    <h1>Remplissez le formulaire:</h1>
+                </div> 
+                <form action="/ma-page-de-traitement" method="post">
+                    <div>
+                        <label for="nom">Identifiant :</label>
+                        <input type="text" id="nom" />
+                    </div>
+                    <div>
+                        <label for="courriel">Email :</label>
+                        <input type="email" id="courriel"/>
+                    </div>
+                    <div>
+                        <label for="message">Message :</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
             </section>
               
         </div>
-    <form action="/ma-page-de-traitement" method="post">
-        <div>
-            <label for="nom">Identifiant :</label>
-            <input type="text" id="nom" />
-        </div>
-        <div>
-            <label for="courriel">Email :</label>
-            <input type="email" id="courriel"/>
-        </div>
-        <div>
-            <label for="message">Message :</label>
-            <textarea id="message"></textarea>
-        </div>
-        <div class="button">
-            <button type="submit">Envoyer</button>
-        </div>
-    </form>
 </body>
 </html>
