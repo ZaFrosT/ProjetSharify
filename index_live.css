@@ -317,13 +317,14 @@ p{
 }
 
 .cadre{
-    width: 80%;
+    width: 90%;
     margin-right: 0;
+    margin-left: 2%;
 }
 
 .col{   
     float: left;
-    margin: 1% 1% 0 0;
+    margin: 1% 0 0 0;
     width: 12%;
     min-height: 50px;
 }
