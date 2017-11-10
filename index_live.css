@@ -10,23 +10,22 @@ body{
 /* NAV */
 nav{
     border-bottom: 1px solid rgb(255, 125, 0);
+    padding: 1% 1% 0 1%;
 }
 nav div{
     display: inline-block;
-    padding: 1% 0 1% 1%;
-}
-/* Sev à gauche */
-nav div div .logo {
-    display: inline-block;
-    height: 75px;
-    width: 75px;
-    margin-right: 50%;
-    float: both;
 }
 
-nav div img{
+/* Logo NAV */
+nav div a img{
     height: 75px;
 }
+
+nav .sev{
+    height: 75px;
+    float: right;
+}
+
 /*Titre */
 body nav div div titrePage{
     display: inline-block;
@@ -185,11 +184,35 @@ label:before {
     font-weight: normal;
 }
   
-label[for*='1']:before { content: '\f1cb'; }
-label[for*='2']:before { content: '\f17d'; }
-label[for*='3']:before { content: '\f16b'; }
-label[for*='4']:before { content: '\f1a9'; }
-  
+label[for*='1']:before { 
+    content: url('imgs/twitchicon.png'); 
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 5px;
+    transform: translate(0, 10%)
+}
+label[for*='2']:before { 
+    content: url('imgs/calendaricon.png'); 
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 5px;
+    transform: translate(0, 5%)
+}
+label[for*='3']:before { 
+    content: url('imgs/mailicon.png'); 
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 5px;
+    transform: translate(0, 5%)
+}
+label[for*='4']:before { 
+    content: url('imgs/moneyicon.png');
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 5px;
+    transform: translate(0, 5%)
+}
+
 label:hover {
     color: rgba(255, 125, 0, 0.315);
     cursor: pointer;
@@ -289,26 +312,6 @@ input:checked + label {
     }
 }
 
-
-.twitter{
-    position: absolute;
-    left: 10%;
-}
-.facebook{
-    position: absolute;
-    right: 10%;
-}
-.youtube{
-    position: absolute;
-    bottom: 10%;
-   left: 10%;
-}
-.discord{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-
 /* PROGRAMMATION*/
 
 p{
@@ -375,7 +378,7 @@ p{
     width: auto;
     position: absolute;
     margin-left: -280px;
-    height: 240px;
+    height: 241px;
 }
 
 .square_centered video{
@@ -396,23 +399,6 @@ p{
     font-size: 20px;
 }
 
-.prog_part p:first-child{
-    margin-top: 20px;
-}
-
-.prog_part p:nth-child(2){
-    margin-top: 50px;
-    font-size: 25px;
-    color: white;
-    line-height: 25px;
-}
-
-.prog_part p:nth-child(3){
-    margin-top: 100px;
-    color: white;
-    font-size: 20px;
-}
-
 .prog_part img{
     height: 120%;
     margin-left: -142.5%;
@@ -424,7 +410,7 @@ p{
 }
 
 .fourhour video{
-    height: 492px;
+    height: 493px;
 }
 
 .links{
@@ -462,31 +448,41 @@ p{
     transition: all 0.3s ease;
 }
 
-.edit:hover:before{
-    background-image: url(imgs/DessinLila01.png);
-}
-
-
 .edit:hover {
     background-color: rgba(255, 123, 0, 0.3);
     text-decoration: none;
     color: beige;
+    box-shadow: 2px;
+    animation: pulse 1s;
 }
+
 .edit:focus {
     background-color: white;
     color: black;
 }
 
-/* Footer */
-footer{
-    border-top: 1px solid rgb(255, 125, 0);
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(122, 51, 3, 0.4);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 0 15px rgba(122, 51, 3, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(122, 51, 3, 0);
+    }
 }
-
-footer div{
-    text-align: center;
-}
-
-footer div p{
-    color: rgb(255, 125, 0);
-    font-size: 12px;
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(122, 51, 3, 0.4);
+        box-shadow: 0 0 0 0 rgba(122, 51, 3, 0.4);
+    }
+    50% {
+        -moz-box-shadow: 0 0 0 15px rgba(122, 51, 3, 0);
+        box-shadow: 0 0 0 15px rgba(122, 51, 3, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(122, 51, 3, 0);
+        box-shadow: 0 0 0 0 rgba(122, 51, 3, 0);
+    }
 }
