@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 body{
-    background: url("imgs/redwpp.jpg");
+    background: url("imgs/fond2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -9,7 +9,7 @@ body{
 }
 /* NAV */
 nav{
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgb(255, 125, 0);
 }
 nav div{
     display: inline-block;
@@ -20,8 +20,12 @@ nav div div .logo {
     display: inline-block;
     height: 75px;
     width: 75px;
-    padding-right: 1%;
+    margin-right: 50%;
     float: both;
+}
+
+nav div img{
+    height: 75px;
 }
 /*Titre */
 body nav div div titrePage{
@@ -32,7 +36,7 @@ body nav div div titrePage{
 }
 
 nav div div h1{
-    color: red;
+    color: rgb(255, 125, 0);
 }
 
 
@@ -52,7 +56,7 @@ form {
     width: 60%;
     /* Pour voir les limites du formulaire */
     padding: 1em;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 125, 0);
     border-radius: 1em;
     text-align: center;
 }
@@ -79,7 +83,7 @@ body form div input, textarea {
     box-sizing: border-box;
 
     /* Pour harmoniser l'apparence des bordures des champs textuels */
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 125, 0);
     background-color: lightgray;
 }
 
@@ -116,7 +120,7 @@ p {
   
 .main {
     min-width: 320px;
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
     margin: 0 auto;
     background: transparent;
 }
@@ -124,7 +128,7 @@ p {
 section {
     display: none;
     padding: 20px 0 0;
-    border-top: 1px solid rgb(255, 0, 0);
+    border-top: 1px solid rgb(255, 125, 0);
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
      -ms-animation: fadein 2s; /* Internet Explorer */
@@ -132,34 +136,6 @@ section {
          animation: fadein 2s;
 }
 
-table {
-    text-align: center;
-    background-color: transparent;
-    color: beige;
-    width: 80%;
-    left: 5%;
-
-}
-
-tr {
-    text-align: center;
-}
-
-th {
-    padding: 0 20px 20px 20px;
-    border-right: 1px solid red;
-}
-
-td {
-    padding: 110px 10px;
-    border-right: 1px solid red;
-    border-bottom: 1px solid red;
-    transform: scale(1.0001);
-}
-
-.tabHeures{
-    border-top: 1px solid red;
-}
 
 @keyframes fadein {
  from { opacity: 0; }
@@ -215,16 +191,16 @@ label[for*='3']:before { content: '\f16b'; }
 label[for*='4']:before { content: '\f1a9'; }
   
 label:hover {
-    color: rgba(255, 0, 0, 0.315);
+    color: rgba(255, 125, 0, 0.315);
     cursor: pointer;
 }
   
 input:checked + label {
     color: beige;
-    border: 1px solid rgb(255, 0, 0);
-    border-top: 2px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 125, 0);
+    border-top: 2px solid rgb(255, 125, 0);
     border-bottom: 1px solid transparent;
-    background-color: rgba(255, 0, 0, 0.1);
+    background-color: rgba(255, 125, 0, 0.1);
 }
   
 #tab1:checked ~ #content1,
@@ -313,28 +289,6 @@ input:checked + label {
     }
 }
 
-/*RESEAUX*/
-.forme{
-    left: 50%;
-    text-align: center;
-}
-
-.aPropos{
-    width: 80%;
-    display: block;
-    margin: 0;
-}
-
-.texte{
-    position: relative;
-    color: beige;
-    font-size: 18px;
-}
-
-b{
-    font-size: 30px;
-    padding: 10px;
-}
 
 .twitter{
     position: absolute;
@@ -355,14 +309,176 @@ b{
     right: 10%;
 }
 
+/* PROGRAMMATION*/
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.cadre{
+    width: 80%;
+    margin-right: 0;
+}
+
+.col{   
+    float: left;
+    margin: 1% 1% 0 0;
+    width: 12%;
+    min-height: 50px;
+}
+
+.hour{
+    height: 80px;
+    width: 50px;
+    float: right;
+    font-size: 25px;
+    font-variant: small-caps;
+    clear: both;
+    padding-right: 5px;
+    text-align: right;
+    /*text-shadow: 0px 0px 10px black;*/
+}
+
+.day{
+    width: 135px;
+    height: 35px;
+    margin-bottom: 15px;
+    /*text-shadow: 0px 0px 10px black;*/
+}
+
+.day p{
+    font-size: 30px;    
+    text-align: center;
+    font-weight: bold;
+}
+
+.separator{
+    background: -webkit-radial-gradient(#aa4e23 30%,transparent 70%); 
+    width: 3px;
+    height: 560px;
+    float: left;
+    margin-top: 40px;
+}
+
+.prog_part{
+    border: 1px solid #aa5923;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
+}
+
+.prog_part video{
+    width: auto;
+    position: absolute;
+    margin-left: -280px;
+    height: 240px;
+}
+
+.square_centered video{
+    margin-left: -105%;
+}
+
+.square{
+    width: 100%;
+    height: 241px;
+}
+
+.prog_part p{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    font-size: 20px;
+}
+
+.prog_part p:first-child{
+    margin-top: 20px;
+}
+
+.prog_part p:nth-child(2){
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+    line-height: 25px;
+}
+
+.prog_part p:nth-child(3){
+    margin-top: 100px;
+    color: white;
+    font-size: 20px;
+}
+
+.prog_part img{
+    height: 120%;
+    margin-left: -142.5%;
+}
+
+.fourhour{
+    width: 100%;
+    height: 492px;
+}
+
+.fourhour video{
+    height: 492px;
+}
+
+.links{
+    list-style: none;
+}
+
+/*RESEAUX*/
+
+.edit {
+    display: block;
+    top: 15px;
+    right: 15px;
+    margin-bottom: 35px;
+    padding: 30px 15px 30px 15px;
+    color: beige;
+    border: 2px solid rgb(255, 125, 0);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.edit:before {
+    content: "";
+    background-image: url(imgs/DessinLila01.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.edit:hover:before{
+    background-image: url(imgs/DessinLila01.png);
+}
 
 
-
-
+.edit:hover {
+    background-color: rgba(255, 123, 0, 0.3);
+    text-decoration: none;
+    color: beige;
+}
+.edit:focus {
+    background-color: white;
+    color: black;
+}
 
 /* Footer */
 footer{
-    border-top: 1px solid red;
+    border-top: 1px solid rgb(255, 125, 0);
 }
 
 footer div{
@@ -370,6 +486,6 @@ footer div{
 }
 
 footer div p{
-    color: red;
+    color: rgb(255, 125, 0);
     font-size: 12px;
 }

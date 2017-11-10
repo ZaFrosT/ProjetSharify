@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #cf4e12;
+    font-variant: small-caps
+}
+
+body{
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+    background-color: #2b2b2b;
+    background-image: url(../fond2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.col{   
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 137px;
+    min-height: 50px;
+}
+
+.hour{
+    height: 80px;
+    width: 50px;
+    float: right;
+    font-size: 25px;
+    font-variant: small-caps;
+    clear: both;
+    padding-right: 10px;
+    text-align: right;
+    /*text-shadow: 0px 0px 10px black;*/
+}
+
+.day{
+    width: 135px;
+    height: 35px;
+    /*text-shadow: 0px 0px 10px black;*/
+}
+
+.day p{
+    font-size: 30px;    
+    text-align: center;
+    font-weight: bold;
+}
+
+.separator{
+    background: -webkit-radial-gradient(#aa4e23 30%,transparent 70%); 
+    width: 3px;
+    height: 560px;
+    float: left;
+    margin-top: 40px;
+}
+
+.prog_part{
+    border: 1px solid #aa5923;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
+}
+
+.prog_part video{
+    width: auto;
+    position: absolute;
+    margin-left: -200px;
+    height: 240px;
+}
+
+.onehour video{
+    height: 150%;
+    margin-left: -25%;
+}
+
+.square_centered video{
+    margin-left: -105%;
+}
+
+.square{
+    width: 135px;
+    height: 240px;
+}
+
+
+.prog_part p{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    font-size: 20px;
+}
+
+.prog_part p:first-child{
+    margin-top: 20px;
+}
+
+.prog_part p:nth-child(2){
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+    line-height: 25px;
+}
+
+.prog_part p:nth-child(3){
+    margin-top: 100px;
+    color: white;
+    font-size: 20px;
+}
+
+.onehour p:first-child{
+    margin-top: 0px;
+}
+
+.onehour p:nth-child(2){
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    line-height: 25px;
+}
+
+.onehour p:nth-child(3){
+    margin-top: 65px;
+    color: white;
+    font-size: 20px;
+}
+
+.prog_part img{
+    height: 120%;
+    margin-left: -142.5%;
+}
+
+.rect{
+    width:135px;
+    height: 240px;
+}
+
+.onehour{
+    width:135px;
+    height: 95px;
+}
+
+.fourhour{
+    width:135px;
+    height: 492px;
+    margin-left: 15px;
+}
+
+.fourhour video{
+    height: 492px;
+}
+
+.dsgif{
+    left: 15px;
+}
