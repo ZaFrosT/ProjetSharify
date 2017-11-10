@@ -374,6 +374,23 @@ p{
     /*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
 }
 
+.prog_part2{
+    border: 1px solid #aa5923;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
+}
+.prog_part3{
+    border: 1px solid #aa5923;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
+}
+
 .prog_part video{
     width: auto;
     position: absolute;
@@ -398,10 +415,36 @@ p{
     text-shadow: 0px 0px 5px black;
     font-size: 20px;
 }
+.prog_part2 p{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    font-size: 20px;
+}
+.prog_part3 p{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    font-size: 20px;
+}
 
 .prog_part img{
     height: 120%;
-    margin-left: -142.5%;
+    margin-left: -130%;
+}
+
+.prog_part2 img{
+    height: 120%;
+    margin-left: -35%;
+    margin-top: -25%;
+}
+.prog_part3 img{
+    height: 120%;
+    margin-left: -380%;
 }
 
 .fourhour{
@@ -412,11 +455,9 @@ p{
 .fourhour video{
     height: 493px;
 }
-
 .links{
     list-style: none;
 }
-
 /*RESEAUX*/
 
 .edit {
